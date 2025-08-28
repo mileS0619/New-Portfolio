@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h3 style="margin-left: 40px; font-size: 23px;">SELIM. O</h3>
+        <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="rhs-elements">
+            <a href="portfolio.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contact</a>
+            <button id="night">
+                <img src="Assets/night-day.png" alt="...">
+            </button>
+            <a href="contact.html" class="letstalk">LET'S TALK</a>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <h1>Contact Me !</h1>
+        <p>Want to team up or jam on a project? Slide into my messages and I’ll hit you back ASAP!</p>
+    </div>
+
+    <div class="section-2">
+        <div class="getintouch">
+            <h2>Get in touch</h2>
+            <div class="email">
+                <div class="getpic">
+                    <img src="Assets/email.png" alt="">
+                </div>
+                <div class="sidetext">
+                    <p>Email</p>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=oyewoleselim@gmail.com" target="_blank">
+                        oyewoleselim@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="location">
+                <div class="getpic">
+                    <img src="Assets/location.png" alt="">
+                </div>
+                <div class="sidetext">
+                    <p>Location</p>
+                    <p class="getp" style="font-size: 13px; color: rgb(39, 39, 52);">Ogun State, Nigeria</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="getpic">
+                    <img src="Assets/phone.png" alt="">
+                </div>
+                <div class="sidetext">
+                    <p>Phone</p>
+                    <a href="tel:+2347061444170">+234-7061444 170</a>
+                </div>
+            </div>
+        </div>
+        <div class="messageside">
+            <h3>What do you want to talk about ?</h3>
+            <form action="https://formspree.io/f/mjkonbnq" method="POST">
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="text" class="namebox" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="addy">
+                    <label for="email">Your Email:</label>
+                    <input type="email" class="mailbox" name="email" placeholder="johndoe@example.com" required>
+                </div>
+                <div class="message">
+                    <label for="message">Your Message:</label>
+                    <textarea class="messagearea" name="message" rows="5" cols="40"
+                        placeholder="Type your message here..." required></textarea>
+                                <button class="arrow" type="submit">Get In Touch <img src="Assets/icons8-send-32.png" alt=""></button>
+
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="section-3">
+        <h2>SELIM.</h2>
+        <div class="footerlinks">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contacts</a>
+        </div>
+        <div class="footerimgs">
+            <a href="#"><img src="Assets/linkedin.png" alt=""></a>
+            <a href="#"><img src="Assets/twitter-alt.png" alt=""></a>
+            <a href="#"><img src="Assets/github.png" alt=""></a>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const nightBtn = document.getElementById("night");
+            const menuToggle = document.querySelector(".menu-toggle");
+            const rhsElements = document.querySelector(".rhs-elements");
+            const body = document.body;
+
+            // Load saved theme if it exists
+            if (localStorage.getItem("theme") === "dark") {
+                body.classList.add("dark-mode");
+            }
+
+            // Toggle dark mode on click
+            nightBtn.addEventListener("click", () => {
+                body.classList.toggle("dark-mode");
+                if (body.classList.contains("dark-mode")) {
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    localStorage.setItem("theme", "light");
+                }
+            });
+
+            // Toggle hamburger menu
+            menuToggle.addEventListener("click", () => {
+                menuToggle.classList.toggle("active");
+                rhsElements.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

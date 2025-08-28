@@ -1,0 +1,22 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("contact.js loaded");
+
+    const toggleBtn = document.getElementById("night");
+    const toggleImg = toggleBtn ? toggleBtn.querySelector("img") : null;
+
+    if (!toggleBtn || !toggleImg) {
+        console.error("Night mode button or image not found in the DOM.");
+        return;
+    }
+
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        if (document.body.classList.contains("dark-mode")) {
+            toggleImg.src = "Assets/sun.png"; // Path to light mode image
+            toggleImg.alt = "Light Mode";
+        } else {
+            toggleImg.src = "Assets/night-day.png"; // Path to dark mode image
+            toggleImg.alt = "Dark Mode";
+        }
+    });
+});
