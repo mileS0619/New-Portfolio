@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <script src="shop.js"></script>
+</head>
+
+<body>
+            <style>
+                /* Default link styling */
+                .navlinks a {
+                    text-decoration: none;
+                    color: black;
+                }
+        
+                /* Active page underline */
+                .navlinks a.active {
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    text-decoration-thickness: 2px;
+                }
+            </style>
+    <div class="navbar">
+        <p style="color: black; font-size: 25px;">Karmy</p>
+        <div class="navlinks">
+            <a href="tem.html">Lookbook</a>
+            <a href="Shop.html">Shop</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="https://www.instagram.com/karmys_aura/profilecard/?igsh=Y216N2hlZHAxeWdm"
+                target="_blank">Instagram</a>
+            <a href="cart.html">
+                <img src="Assets/shopping-cart.png" alt="Shopping Cart" style="width: 21px;">
+            </a>
+        </div>
+    </div>
+
+    </div>
+    <h1>Shop</h1>
+    <div class="nav">
+        <a href="#" onclick="showSection('all')">All</a> |
+        <a href="#" onclick="showSection('perfumes')">Perfumes</a> |
+        <a href="#" onclick="showSection('jewelries')">Jewelries</a>
+    </div>
+
+    <!-- Section 1: All -->
+    <div id="all" class="section active">
+        <div class="items">
+            <div class="item"
+                style="background-image: url(Assets/alex-azabache-y2ErhoE92KA-unsplash.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('necklace1')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/diamondring.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('ring1')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/hosniye-sadeghi-_Ycmc96ZxWM-unsplash.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('necklace2')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/earr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('Earing1')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/life.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('perfume1')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/speear.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <img src="https://via.placeholder.com/300x400?text=Gold+Clutch" alt="Gold Clutch">
+                <button onclick="showModal('Earing2')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/group.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <img src="https://via.placeholder.com/300x400?text=Scarf" alt="Scarf">
+                <button onclick="showModal('bracelet1')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/life.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('perfume2')">View More</button>
+            </div>
+            <div class="item"
+                style="background-image: url(Assets/flower.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+                <button onclick="showModal('necklace3')">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Perfumes -->
+    <div id="perfumes" class="section">
+        <div class="items">
+            <div class="item"
+                style="background-image: url(Assets/life.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('perfume3')">View More</button>
+            </div>
+
+            <div class="item">
+                <div class="item"
+                    style="background-image: url(Assets/blue.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+                <button onclick="showModal('perfume4')">View More</button>
+            </div>
+
+            <div class="item">
+                <div class="item"
+                    style="background-image: url(Assets/coco.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+                <button onclick="showModal('perfume5')">View More</button>
+            </div>
+
+        </div>
+    </div>
+zz
+    <!-- Section 3: Jewelries -->
+    <div id="jewelries" class="section">
+        <div class="items">
+            <div class="item"
+                style="background-image: url(Assets/hosniye-sadeghi-_Ycmc96ZxWM-unsplash.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <button onclick="showModal('necklace4')">View More</button>
+            </div>
+            <div class="item">
+                <div class="item"
+                    style="background-image: url(Assets/group.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                </div>
+
+                <button onclick="showModal('bracelet2')">View More</button>
+            </div>
+            <div class="item" style="background-image: url(Assets/earr.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+                
+                <button onclick="showModal('earring3')">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-karmy</title>
+    <link rel="stylesheet" href="tem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("navbar.html")
+            .then(r => r.text())
+            .then(html => document.getElementById("navbar-container").innerHTML = html);
+    </script>
+
+    <div class="contactsection-1">
+        <div class="leftpart">
+            <p>Contact</p>
+            <h2>oyewolekhaerat720@gmail.com</h2>
+            <h2>(+234) 8100666964</h2>
+            <div class="contacticons">
+                <a href=""><img src="Assets/whiteinsta.png" alt=""></a>
+                <a href=""><img src="Assets/whitefb.png" alt=""></a>
+                <a href=""><img src="Assets/whitetwitter.png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="rightpart">
+            <p>Name (required)</p>
+            <form action="submit">
+                <div class="topfields">
+                    <div class="firstname">
+                        <p>First Name</p>
+                        <input type="text" required>
+                    </div>
+                    <div class="lastname">
+                        <p>Last Name</p>
+                        <input type="text" required>
+
+                    </div>
+                </div>
+                <div class="bottomfields">
+                    <p>Email (required)</p>
+                    <input type="email" required>
+                    <p>Subject (required)</p>
+                    <input type="text" required>
+                    <p>Message (required)</p>
+                    <textarea name="message" rows="5" cols="30" placeholder="Type your message here..."
+                        required></textarea>
+
+                </div>
+                <button type="submit" class="contactbutton">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="contactsection-2">
+        <div class="contact2content">
+            <p>The Latest</p>
+            <p style="font-size: 14px; font-weight: 600;">Sign up to receive latest news and updates</p>
+            <form action="oyewolekhaerat720@gmail.com" class="contactbaseform">
+                <input type="email" placeholder="Email Address" class="latestform">
+                <button type="submit" style="color:white" class="mailbutton2">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div class="lastcontactbottom1">
+        <div class="lastcontactbottom">
+            <p style="color: white; font-size: 30px;">Karmy</p>
+            <div class="sect5content">
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+
+        }
+
+        .navbar {
+            height: 100px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .navlinks {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 30px;
+            margin-left: 0;
+            margin-right: 0;
+            justify-content: flex-end;
+            font-family: 'sans-serif';
+        }
+
+        .navlinks a.active {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .section1 {
+            width: 100%;
+            min-height: 400px;
+            height: auto;
+            display: flex;
+            margin-top: 0;
+            justify-content: center;
+            align-items: center;
+            font-family: "Orpheus Pro";
+
+        }
+
+        .section1-small {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Orpheus Pro";
+        }
+
+        .section1 h1 {
+            color: white;
+            font-weight: 200;
+            width: 200px;
+            text-align: center;
+            font-size: 50px;
+            /* opacity: 0;
+            transition: opacity 5s ease-in; */
+        }
+
+        .section2 {
+            width: 100%;
+            /* background-color: white; */
+            height: 1150px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .leftpics {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 1100px;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .box1 {
+            background-image: url(Assets/prahant-designing-studio-wcM6IweGBmw-unsplash.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90%;
+            height: 400px;
+        }
+
+        .box2 {
+            width: 90%;
+            height: 700px;
+            background-image: url(Assets/firstperfume.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .rightpics {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 1100px;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .box3 {
+            width: 90%;
+            height: 330px;
+            background-image: url(Assets/bracelet.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box4 {
+            width: 90%;
+            height: 330px;
+            background-image: url(Assets/patek.avif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box5 {
+            width: 90%;
+            height: 330px;
+            background-image: url(Assets/parisa-safaei--_12be3InkQ-unsplash.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bottomimg {
+            height: 600px;
+            width: 100%;
+            background-image: url(Assets/);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .section3 {
+            width: 100%;
+            height: 900px;
+            display: block;
+            margin-top: 90px;
+            margin-bottom: 100px;
+        }
+
+        .section3img {
+            height: 600px;
+            width: 95%;
+            background-image: url(Assets/blackwomanperfume.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-self: center;
+            margin-bottom: 120px;
+        }
+
+        .blackwomantext {
+            color: white;
+            width: 550px;
+            text-align: center;
+            line-height: 29.8982px;
+            font-family: 'Cormorant Garamond', serif;
+            justify-self: center;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .section3 a {
+            font-family: 'Orpheus Pro';
+            font-size: 30px;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .section4 {
+            height: 500px;
+            width: 100%;
+            background-image: url(Assets/blackmandior.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .sect4content {
+            width: 30%;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            margin-left: 20px;
+        }
+
+        .sect4content p {
+            color: white;
+            font-weight: lighter;
+            line-height: 45px;
+            font-family: 'Orpheus Pro';
+        }
+
+        .mail {
+            background-color: white;
+            padding: 10px;
+            border: 0;
+            width: 200px;
+            height: 45px;
+            font-family: 'Orpheus Pro';
+        }
+
+        .mailbutton {
+            padding: 13px;
+            border: 0;
+            background-color: gray;
+            font-family: 'Orpheus Pro';
+            transition: 0.2s ease-in;
+            cursor: pointer;
+        }
+
+        .mailbutton:hover {
+            background-color: rgb(81, 80, 80);
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        .section5 {
+            width: 100%;
+            height: 100px;
+            display: block;
+            font-weight: 200;
+            font-size: 15px;
+            font-family: 'Orpheus Pro';
+        }
+
+        .sect5content p {
+            color: white;
+            font-weight: lighter;
+            line-height: 45px;
+            font-family: 'Orpheus Pro';
+            font-size: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .sect5content a {
+            width: 10px;
+            color: rgb(178, 178, 178);
+            word-spacing: 20px;
+        }
+
+
+        .sect5content {
+            color: white;
+            font-weight: lighter;
+            line-height: 45px;
+            font-family: 'Orpheus Pro';
+            margin-top: 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        .aboutp {
+            height: 400px;
+        }
+
+        .aboutp p {
+            color: white;
+            width: 700px;
+            margin-left: 41px;
+            line-height: 30px;
+            font-family: "Orpheus Pro";
+            font-size: 24px;
+            width: 650px;
+            text-align: justify;
+        }
+
+        .aboutsection2 {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background-image: url(Assets/blackmandior.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .contactsection-1 {
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .leftpart {
+            width: 40%;
+            height: 450px;
+            margin-left: 50px;
+        }
+
+        .leftpart p {
+            color: white;
+            font-family: 'Sans-Serif';
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        .leftpart h2 {
+            color: white;
+            font-family: 'Orpheus Pro';
+            font-size: 33px;
+            font-weight: 100;
+            line-height: 45px;
+        }
+
+        .contacticons {
+            display: flex;
+            gap: 10px;
+            margin-top: 35px;
+        }
+
+        .contacticons img {
+            width: 20px;
+            height: 20px;
+            transition: opacity 0.3s ease;
+        }
+
+        .contacticons img:hover {
+            opacity: 0.6;
+        }
+
+        .rightpart {
+            width: 55%;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+        }
+
+        .rightpart p {
+            color: white;
+            font-family: 'Orpheus Pro';
+            font-size: 15px;
+        }
+
+        .topfields {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .topfields p {
+            color: white;
+            font-family: 'Orpheus Pro';
+            font-size: 15px;
+        }
+
+        .topfields input {
+            background-color: white;
+            border: none;
+            width: 267px;
+            height: 40px;
+        }
+
+        .bottomfields p {
+            color: white;
+            font-family: 'Orpheus Pro';
+            font-size: 15px;
+        }
+
+        .bottomfields input {
+            background-color: white;
+            border: none;
+            width: 550px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            background-color: white;
+            font-family: 'Orpheus Pro';
+            border: none;
+            width: 550px;
+            max-width: 550px;
+            max-height: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        .contactbutton {
+            color: white;
+            background-color: grey;
+            font-family: 'Orpheus Pro';
+            border: none;
+            padding: 10px 17px;
+            margin-top: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .contactbutton:hover {
+            background-color: rgb(84, 84, 84);
+        }
+
+        .contactsection-2 {
+            width: 100%;
+            height: 500px;
+            background-image: url(Assets/blackmandior.png);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 80px;
+        }
+
+        .contact2content {
+            width: 450px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-self: flex-end;
+            margin-left: 30px;
+        }
+
+        .contact2content p {
+            color: white;
+            line-height: 50px;
+            font-family: "Orpheus Pro";
+            font-size: 24px;
+        }
+
+        .latestform {
+            background-color: white;
+            border: none;
+            padding: 10px;
+            width: 250px;
+            height: 45px;
+            font-family: "Orpheus Pro";
+        }
+
+        .mailbutton2 {
+            padding: 13px;
+            border: 0;
+            background-color: gray;
+            font-family: 'Orpheus Pro';
+            transition: 0.2s ease-in;
+            cursor: pointer;
+        }
+
+        .mailbutton2:hover {
+            background-color: rgb(81, 80, 80);
+        }
+
+        .lastcontactbottom1 {
+            border-bottom: 1px solid white;
+            margin-bottom: 120px;
+        }
+
+        .lastcontactbottom {
+            margin-left: 30px;
+            height: 150px;
+        }
+@media (max-width: 768px){
+    .navbar {
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-bottom: 0px;
+    }   
+    .nav{
+    margin: 20px 0;
+    }
+    .item{
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        width: 340px;
+    }
+    .topfields input{
+        background-color: blue;
+        width: 10px;
+    }
+
+
+}

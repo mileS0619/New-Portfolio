@@ -319,7 +319,7 @@
     width: 40px;
 }
 
-.section-3 h3{
+.section-3 h3 {
     font-weight: 400;
     font-size: 17px;
 }
@@ -473,8 +473,8 @@
 }
 
 .projcontainer {
-    width: 95%;
-    height: 1060px;
+    width: 100%;
+    height: 1200px;
     margin-top: 30px;
     justify-self: center;
     display: flex;
@@ -486,6 +486,7 @@
 .projbox1,
 .projbox2,
 .projbox3,
+.projbox3-5,
 .projbox4,
 .projbox5,
 .projbox6 {
@@ -495,6 +496,8 @@
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
 }
+
+
 
 .img1 {
     width: 100%;
@@ -524,6 +527,17 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-image: url(projects/Screenshot\ 2025-08-16\ 023548.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3-5{
+    background-image: url(projects/huawei.png);
+    width: 100%;
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -816,7 +830,7 @@ body.dark-mode .SE,
 body.dark-mode .SRW {
     background: linear-gradient(180deg, #292828, #000000, #292828);
     transition: 0.3s ease-in-out;
-    
+
 }
 
 body.dark-mode .skillscontainer img {
@@ -1011,14 +1025,17 @@ body.dark-mode .footerimgs img {
 
 body.dark-mode .menu-toggle span {
     background: #ffffff;
+    transition: 0.3s ease-in-out;
+
 }
 
 /* Responsive Styles for iPad (768px to 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
     /* Navbar: Hamburger Menu */
     .navbar {
         height: 60px;
-        
+
     }
 
     .navbar h3 {
@@ -1055,10 +1072,10 @@ body.dark-mode .menu-toggle span {
         padding: 10px 20px;
         border-radius: 5px;
     }
-    
-      .rhs-elements a:hover{
+
+    .rhs-elements a:hover {
         border-bottom: none;
-      }
+    }
 
     .rhs-elements .letstalk {
         width: auto;
@@ -1072,6 +1089,8 @@ body.dark-mode .menu-toggle span {
 
     body.dark-mode .rhs-elements {
         background: rgba(0, 0, 0, 0.95);
+        transition: 0.3s ease-in-out;
+
     }
 
     /* Section 1: Image on own line, reduced text sizes */
@@ -1153,7 +1172,8 @@ body.dark-mode .menu-toggle span {
 
     .about-me h1 {
         font-size: 28px;
-text-align: center;    }
+        text-align: center;
+    }
 
     .about-me p {
         font-size: 16px;
@@ -1203,7 +1223,7 @@ text-align: center;    }
     .WD,
     .SE,
     .SRW {
-       width: 600px;
+        width: 600px;
         height: 220px;
         border-radius: 12px;
     }
@@ -1250,7 +1270,7 @@ text-align: center;    }
 
     /* Section 5: Each projbox on own line */
     .section-5 {
-        height: 3300px;
+        height: 2360px;
         padding: 20px;
     }
 
@@ -1270,6 +1290,7 @@ text-align: center;    }
     .projbox1,
     .projbox2,
     .projbox3,
+    .projbox3-5,
     .projbox4,
     .projbox5,
     .projbox6 {
@@ -1300,6 +1321,7 @@ text-align: center;    }
         font-size: 18px;
         margin-top: 40px;
         padding: 10px 18px;
+        text-decoration: none;
     }
 
     /* Section 6: Centered, compact layout */
@@ -1352,7 +1374,7 @@ text-align: center;    }
     }
 
     .footerimgs {
-        gap: 40px !important;        
+        gap: 40px !important;
         justify-content: center;
     }
 
@@ -1365,20 +1387,28 @@ text-align: center;    }
     body.dark-mode .rhs-elements a,
     body.dark-mode .rhs-elements .letstalk {
         color: #f5f5f5;
+        transition: 0.3s ease-in-out;
+
     }
 
     body.dark-mode .rhs-elements .letstalk {
         background-color: white;
         color: black !important;
+        transition: 0.3s ease-in-out;
+
     }
 
     body.dark-mode .toolbox {
         box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+        transition: 0.3s ease-in-out;
+
     }
 
     body.dark-mode .toolbox::before,
     body.dark-mode .toolbox::after {
         background: rgba(200, 200, 255, 0.9);
+        transition: 0.3s ease-in-out;
+
     }
 }
 
@@ -1408,7 +1438,7 @@ text-align: center;    }
         top: 60px;
         left: 0;
         width: 100%;
-    background-color: whitesmoke;
+        background-color: whitesmoke;
         backdrop-filter: blur(10px);
         padding: 20px;
         align-items: flex-start;
@@ -1417,20 +1447,20 @@ text-align: center;    }
 
     .rhs-elements.active {
         display: flex;
-        
+
     }
 
     .rhs-elements a,
     .rhs-elements .letstalk {
-        width: 100%;        
+        width: 100%;
         text-align: left;
         padding: 10px 20px;
         border-radius: 5px;
     }
 
-.rhs-elements a:hover{
-    border-bottom: none;
-}
+    .rhs-elements a:hover {
+        border-bottom: none;
+    }
 
     .rhs-elements .letstalk {
         width: auto;
@@ -1444,11 +1474,13 @@ text-align: center;    }
 
     body.dark-mode .rhs-elements {
         background: rgba(0, 0, 0, 0.95);
+        transition: 0.3s ease-in-out;
+
     }
 
     /* Section 1: Image on own line, reduced text sizes */
     .section-1 {
-        height: 600px;
+        height: 670px;
         /* Increased for vertical stacking */
         flex-direction: column;
         padding: 20px;
@@ -1460,15 +1492,23 @@ text-align: center;    }
     }
 
     .section1-h1 h1 {
-        font-size: 20px !important;
+        font-size: 24px !important;
         line-height: 36px;
     }
 
     .intro p {
-        font-size: 14px;
-        width: 90%;
-        max-width: 400px;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 20px;
+        max-width: 420px;
         line-height: 24px;
+    }
+
+    .introlinks {
+        height: 150px;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
     }
 
     .introlinks a {
@@ -1477,17 +1517,22 @@ text-align: center;    }
     }
 
     .introlinks a[style*="padding: 15px 50px"] {
-        padding: 10px 15px !important;
+        padding: 15px 110px !important;
+        border-radius: 5px;
+        margin-right: -10px !important;
     }
 
     .introlinks a[style*="padding: 15px 30px"] {
-        padding: 10px 15px !important;
+        padding: 15px 100px !important;
+        border-radius: 5px;
+        position: relative !important;
+        top: 15%;
     }
 
     /* Section 2: Image at top, about-me below */
     .section-2 {
         flex-direction: column;
-        height: 900px;
+        height: 950px;
         /* Increased for vertical stacking */
         padding: 20px;
     }
@@ -1546,15 +1591,16 @@ text-align: center;    }
         padding: 10px 30px;
     }
 
-    .downloadcv {
-        width: auto;
+    .downloadcv,
+    .mipro {
+        width: 100%;
         margin-left: 0;
-        padding: 10px 20px;
+        padding: 15px 20px !important;
     }
 
     /* Section 3: Skills title at top, each skill on own line */
     .section-3 {
-        height: 1600px;
+        height: 1400px;
         /* Increased for single-column layout */
         padding: 20px;
     }
@@ -1566,7 +1612,7 @@ text-align: center;    }
     .skillscontainer {
         width: 90%;
         flex-direction: column;
-        gap: 30px;
+        gap: 33px;
         margin-top: 20px;
     }
 
@@ -1576,13 +1622,13 @@ text-align: center;    }
     .SE,
     .SRW {
         width: 100%;
-        max-width: 400px;
-        height: 250px;
-        border-radius: 20px;
+        height: 200px;
+        border-radius: 100px;
     }
 
-    .section-3 h3, h2 {
-        font-size: 16px !important; 
+    .section-3 h3,
+    h2 {
+        font-size: 16px !important;
     }
 
     .section-3 button {
@@ -1624,7 +1670,7 @@ text-align: center;    }
 
     /* Section 5: Each projbox on own line */
     .section-5 {
-        height: 3360px;
+        height: 2800px;
         /* Increased for single-column layout */
         padding: 20px;
     }
@@ -1645,6 +1691,7 @@ text-align: center;    }
     .projbox1,
     .projbox2,
     .projbox3,
+    .projbox3-5,
     .projbox4,
     .projbox5,
     .projbox6 {
@@ -1653,7 +1700,9 @@ text-align: center;    }
         height: auto;
         min-height: 400px;
     }
-
+        .projbox3-5{
+            margin-top: 30px;
+        }
     .projtext h3 {
         font-size: 16px !important;
     }
@@ -1674,6 +1723,7 @@ text-align: center;    }
     .viewall {
         font-size: 12px;
         margin-top: 50px;
+        text-decoration: none;
         padding: 8px 15px;
     }
 
@@ -1701,12 +1751,13 @@ text-align: center;    }
 
     /* Section 7: SELIM centered, links left, images centered */
     .section-7 {
-    width: 100%;
+        width: 100%;
         height: 170px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding-bottom: 20px;
 
     }
 
@@ -1727,7 +1778,7 @@ text-align: center;    }
 
     .footerlinks a {
         font-size: 13px;
-          align-self: center;
+        align-self: center;
         justify-self: center;
         font-weight: bold;
     }
@@ -1750,20 +1801,27 @@ text-align: center;    }
     body.dark-mode .rhs-elements a,
     body.dark-mode .rhs-elements .letstalk {
         color: #f5f5f5;
+        transition: 0.3s ease-in-out;
+
     }
 
     body.dark-mode .rhs-elements .letstalk {
         background-color: white;
+        transition: 0.3s ease-in-out;
         color: black !important;
     }
 
     body.dark-mode .toolbox {
         box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+        transition: 0.3s ease-in-out;
+
     }
 
     body.dark-mode .toolbox::before,
     body.dark-mode .toolbox::after {
         background: rgba(200, 200, 255, 0.9);
+        transition: 0.3s ease-in-out;
+
         /* Slightly blue-tinted bubbles for dark mode */
     }
 }

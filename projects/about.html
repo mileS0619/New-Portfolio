@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Karmy</title>
+    <link rel="stylesheet" href="tem.css">
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/2aea0ac500c896188f9ad191c231029c?family=Orpheus+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+            });
+    </script>
+
+    <div class="section-1">
+        <h1>About Karmy</h1>
+    </div>
+    <div class="aboutp">
+        <p>
+            Karmy is more than just a brand, it's a statement of timeless elegance and modern sophistication.
+            Our collections are crafted with precision, passion, and a deep respect for artistry.
+            From fine jewelry to signature fragrances, every piece reflects a dedication to luxury and sustainability.
+        </p>
+        <br>
+        <p>
+            We believe in quality over quantity, which is why our items are available in limited editions,
+            ethically sourced and designed to last a lifetime.
+        </p>
+
+    <br>
+    <p style="font-size: 16px; font-style: italic; border-top: 1px solid white; width: 280px; margin-top: 60px; font-family: 'Orpheus Pro';">Bags Courtesy of Karmy&Co.</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="aboutsection2">
+         <div class="sect4content">
+            <p style="font-size: 28px">The Latest</p>
+            <p>Sign up to receive news and updates</p>
+            <form action="https://oyewolekhaerat720@gmail.com">
+                <input type="email" placeholder="Email Address" class="mail">
+                <button type="submit" style="color: white;" class="mailbutton">Sign-Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="section5">
+        <p style="color: white; font-size: 30px;">Karmy</p>
+        <div class="sect5content">
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

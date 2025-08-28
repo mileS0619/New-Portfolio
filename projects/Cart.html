@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARMYCART</title>
+<link rel="stylesheet" href="tem.css"></head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("navbar.html")
+            .then(r => r.text())
+            .then(html => document.getElementById("navbar-container").innerHTML = html);
+    </script>
+</body>
+</html>
