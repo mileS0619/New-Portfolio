@@ -686,7 +686,7 @@ body.dark-mode .footerimgs img {
 
     .section-2 {
         width: 100%;
-        height: 1250px;
+        height: 1300px;
         /* Increased from auto for phones */
         flex-direction: column;
         justify-content: flex-start;
@@ -694,7 +694,7 @@ body.dark-mode .footerimgs img {
 
     .getintouch {
         width: 100%;
-        height: 500px;
+        height: 600px;
         margin-top: 30px;
         align-items: center;
     }
